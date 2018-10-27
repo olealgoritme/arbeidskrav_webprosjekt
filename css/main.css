@@ -1,0 +1,389 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Creepster', normal;
+}
+
+/* Halloween font face */
+@font-face {
+  font-family: 'Creepster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Creepster'), local('Creepster-Regular'), url(https://fonts.gstatic.com/s/creepster/v6/AlZy_zVUqJz4yMrniH4Rcn35.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Main container for our view */
+#container-main {
+	z-index: 0;
+	margin: auto;
+	background-color: rgb(0, 0, 0);
+	height: 600px;
+	width: 1000px;
+	position: relative;
+	background-image: url("../images/background-2.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+/* Halloween header text */
+#txt-halloween {
+	margin-left: 250px;
+	margin-top: 40px;
+	transform: rotate(-37deg);
+	animation: anim-txt-halloween 13s infinite;
+	opacity: 0.3;
+}
+
+/* Halloween header text animation*/
+@keyframes anim-txt-halloween { 
+	0% {
+		font-size: 10px;
+	} 50% {
+		font-size: 22px;
+	} 100% {
+		font-size: 12px;
+	}
+}
+
+
+/* START Grass front/back elements */
+#g1 {left: 0;}
+#g2 {left: 25;}
+#g3 {left: 50;}
+#g4 {left: 75;}
+#g5 {left: 100;}
+#g6 {left: 125;}
+#g7 {left: 150;}
+#g8 {left: 175;}
+#g9 {left: 200;}
+#g10 {left: 225;}
+#g11 {left: 250;}
+#g12 {left: 275;}
+#g13 {left: 300;}
+#g14 {left: 325;}
+#g15 {left: 350;}
+#g16 {left: 375;}
+#g17 {left: 400;}
+#g18 {left: 425;}
+#g19 {left: 450;}
+#g20 {left: 475;}
+#g21 {left: 500;}
+#g22 {left: 525;}
+#g23 {left: 550;}
+#g24 {left: 575;}
+#g25 {left: 600;}
+#g26 {left: 625;}
+#g27 {left: 650;}
+#g28 {left: 675;}
+#g29 {left: 700;}
+#g30 {left: 725;}
+#g31 {left: 750;}
+#g32 {left: 775;}
+#g33 {left: 800;}
+#g34 {left: 825;}
+#g35 {left: 850;}
+#g36 {left: 875;}
+#g37 {left: 900;}
+#g38 {left: 925;}
+#g39 {left: 950;}
+#g40 {left: 975;} 
+
+#gb1 {left: 15;}
+#gb2 {left: 35;}
+#gb3 {left: 65;}
+#gb4 {left: 85;}
+#gb5 {left: 115;}
+#gb6 {left: 135;}
+#gb7 {left: 165;}
+#gb8 {left: 185;}
+#gb9 {left: 215;}
+#gb10 {left: 235;}
+#gb11 {left: 265;}
+#gb12 {left: 285;}
+#gb13 {left: 315;}
+#gb14 {left: 335;}
+#gb15 {left: 365;}
+#gb16 {left: 385;}
+#gb17 {left: 415;}
+#gb18 {left: 435;}
+#gb19 {left: 465;}
+#gb20 {left: 485;}
+#gb21 {left: 515;}
+#gb22 {left: 535;}
+#gb23 {left: 565;}
+#gb24 {left: 585;}
+#gb25 {left: 615;}
+#gb26 {left: 635;}
+#gb27 {left: 665;}
+#gb28 {left: 685;}
+#gb29 {left: 715;}
+#gb30 {left: 735;}
+#gb31 {left: 765;}
+#gb32 {left: 785;}
+#gb33 {left: 815;}
+#gb34 {left: 835;}
+#gb35 {left: 865;}
+#gb36 {left: 885;}
+#gb37 {left: 915;}
+#gb38 {left: 935;}
+#gb39 {left: 965;}
+#gb40 {left: -15;} 
+/* END Grass front/back elements */
+
+/* Default properties for front/back grass elements */
+.grass-front {
+	z-index: 50;
+	position: absolute;
+	bottom: 0;
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+	border-bottom: 40px solid rgb(0, 150, 50);
+}
+
+.grass-back {
+	z-index: 47;
+	position: absolute;
+	bottom: 5px;
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+	border-bottom: 40px solid rgb(0, 100, 25);
+}
+
+/* Dirt (wtf? :P) */
+#dirt {
+	index: 48;
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	border-bottom: 10px solid rgb(160, 82, 45);
+}
+
+/* Default properties for the tombstones */
+.tombstones {
+	z-index: 48;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 10px;
+	background-color: rgb(100, 100, 100);
+	height: 100px;
+	width: 80px;
+	border-top-left-radius: 25%; 
+	border-top-right-radius: 25%;
+	border-top: 1px solid rgb(30, 30, 30);
+	border-left: 1px solid rgb(30, 30, 30);
+	border-right: 1px solid rgb(30, 30, 30);
+}
+
+/* Tombstone hover glow effect */
+.tombstones:hover {
+	box-shadow: 0 0 5px rgb(230, 200, 0),
+				0 0 15px rgb(200, 150, 0),
+				0 0 35px rgb(150, 50, 0),	
+				inset 0 0 10px rgb(150, 150, 150);
+}
+
+/* Default properties for our images */
+.images-halloween {
+	width: 80px;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transition: 3s ease-in-out;
+}
+
+/* Default properties for tombstone names */
+.tombstones-txt {
+	font-size: 25px;
+	color: rgb(50, 50, 50);
+	text-shadow: 0 0 5px rgb(70, 70, 70), 0 0 10px rgb(90, 90, 90);
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+
+/* Default properties for tombstone skull images */
+.skulls {
+	position: absolute;
+	z-index: 49;
+	width: 20px;
+	bottom: 32px;
+	left: 30px;
+}
+
+#container-tombstone-ole { 
+	left: 250px;
+}
+
+#txt-tombstone-ole {
+	left: 20px;
+}
+
+#container-tombstone-mattis {
+	left: 450px;
+}
+
+#txt-tombstone-mattis {
+	left: 7px;
+}
+
+#container-tombstone-kjetil {
+	left: 750px;
+}
+
+#txt-tombstone-kjetil {
+	left: 11px;
+}
+
+/* START Tombstone hover transitions with transformations */
+#container-tombstone-ole:hover #img-ole {
+	left:-100px;
+	opacity: 1.00;
+	bottom: 300px;
+	transform:scale(2.5);
+}
+
+#container-tombstone-mattis:hover #img-mattis {
+	left: 20px;
+	opacity: 1.00;
+	bottom: 300px;
+	transform:scale(2.5);
+}
+
+#container-tombstone-kjetil:hover #img-kjetil {
+	left: 100px;
+	opacity: 1.00;
+	bottom: 300px;
+	transform:scale(2.5);
+	transform: rotate(1080deg);
+}
+/* END Tombstone hover transitions with transformations */
+
+/* START Flying ghost animation*/
+#img-ghost {
+	animation: anim-img-ghost 20s ease forwards infinite;
+}
+
+@keyframes anim-img-ghost {
+	0% { 
+		opacity: 0;
+		bottom: 0;
+		width: 80px;
+		transform: rotateY(180deg);
+	} 30% {
+		opacity: 0.4;
+		left: 900px;
+		bottom: 0;
+		width: 80px;
+		transform: rotateY(0deg);
+	} 35% {
+		opacity: 0.5;
+		left: 750px;
+		bottom: 200px;
+		width: 80px;
+		transform: rotateY(180deg);
+	} 45% {
+		opacity: 0.5;
+		left: 900px;
+		bottom: 350px;
+		width: 60px;
+		transform: rotateY(0deg);
+	} 55% {
+		opacity: 1;
+		left: 350px;
+		bottom: 275px;
+		width: 40px;
+		transform: rotateY(180deg);
+	} 65% {
+		opacity: 0.5;
+		left: 370px;
+		bottom: 75px;
+		width: 80px;
+		transform: rotateY(0deg);
+	} 75% {
+		opacity: 0.5;
+		left: 150px;
+		bottom: 350px;
+		width: 80px;
+		transform: rotateY(180deg);
+	} 85% {
+		opacity: 0.5;
+		left: 440px;
+		bottom: 220px;
+		width: 40px;
+	}
+
+}
+/* END Flying ghost animation*/
+
+#img-pumpkin {
+	position: absolute;
+	right: 0;
+	bottom: 50px;
+	width: 40px;
+	opacity: 0.7;
+}
+
+#img-devil {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	opacity: 0;
+	left: 35px;
+	bottom: 15px;
+}
+
+#container-castle {
+	position: absolute;
+	left: 355px;
+	bottom: 270px;
+	width: 100px;
+	height: 100px;
+}
+
+#container-castle:hover #img-devil {
+	animation: anim-devil 3s ease;
+}
+
+@keyframes anim-devil {
+	0% {
+		width: 30px;
+		height: 30px;
+		opacity: 0;
+		left: 35px;
+		bottom: 15px;
+		
+	} 49% {
+		width: 500px;
+		height: 500px;
+		opacity: 1;
+		left: -200px;
+		bottom: -200px;
+	
+	} 50% {
+		width: 500px;
+		height: 500px;
+		opacity: 1;
+		left: -200px;
+		bottom: -200px;
+		flood-color: rgb(255, 0, 0);
+	} 100% {
+		width: 30px;
+		height: 30px;
+		opacity: 0;
+		left: 35px;
+		bottom: 15px;
+	}
+}
+
+
+
+
+
+
+

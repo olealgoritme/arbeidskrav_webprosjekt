@@ -1,0 +1,137 @@
+body {
+	background-color: rgb(0, 15, 50);
+}
+
+#container-main {
+	margin: auto;
+	width: 1000px;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+}
+
+#img-background {
+	width: 100%;
+}
+
+/* START Pumpkins */
+#img-pumpkins {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 500px;
+	height: 200px;
+}	
+
+#container-pumpkins {
+	width: 500px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	animation: anim-img-pumpkins 5s ease;
+}
+
+#container-pumpkin-1 {  
+	margin: 0;
+	background-color: rgb(255, 100, 0);
+	opacity: 0.99;
+	width: 120px;
+	height: 70px;
+	position: absolute;
+	right: 200px;
+	top: 110px;
+}
+
+#container-pumpkin-2 {
+	margin: 0;
+	background-color: rgb(255, 100, 0);
+	opacity: 0.99;
+	width: 90px;
+	height: 65px;
+	position: absolute;
+	right: 70px;
+	top: 110px;
+}
+
+#container-pumpkin-3 {
+	margin: 0;
+	background-color: rgb(255, 100, 0);
+	opacity: 0.99;
+	width: 90px;
+	height: 60px;
+	position: absolute;
+	right: 350px;
+	top: 110px;
+}
+
+@keyframes anim-img-pumpkins {
+	0%{
+		transform: scale(1);
+	} 25%{
+		-webkit-transform: rotate(180deg) scale(1.2);
+	} 50% {
+		transform: scale(1.4);
+	} 100% {
+		transform: scale(1);
+	}
+}
+/* END Pumpkins */
+
+/* START Horseman */
+#img-horseman {
+	position: absolute;
+	bottom: 0px;
+	right: -450px;
+	width: 450px;
+	height: 300px;
+	animation-name: anim-img-horsema;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes anim-img-horseman {
+	0% {
+		right: -450px;
+	} 1% {
+		top: 300px;
+	} 100% {
+		right: 1000px;
+		top: 0;
+	}
+}
+/* END Horseman */
+
+/* START Start button */
+#btn-start {
+	background-color: rgb(255, 255, 0);
+	width: 250px;
+	height: 100px;
+	right: 40px;
+	bottom: 100px;
+	position: absolute;
+	border-radius: 35%;
+	box-shadow: 0px 0px 15px 15px rgb(255, 255, 0);
+}
+
+#btn-start:hover {
+	background-color: rgb(255, 110, 0);
+	color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 15px 15px rgb(255, 110, 0);
+}
+
+#txt-btn-start {
+	padding: 0px;
+	font-family: arial;
+	font-size: 50px;
+	top: 20px;
+	left: 30px;
+	position: absolute;
+}
+/* END Start button */
+
+
+
+
+
+
