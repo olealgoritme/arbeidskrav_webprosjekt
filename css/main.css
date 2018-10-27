@@ -48,7 +48,6 @@ body {
 	}
 }
 
-
 /* START Grass front/back elements */
 #g1 {left: 0;}
 #g2 {left: 25;}
@@ -338,6 +337,7 @@ body {
 	bottom: 15px;
 }
 
+/* START Castle and devil */
 #container-castle {
 	position: absolute;
 	left: 355px;
@@ -380,7 +380,7 @@ body {
 		bottom: 15px;
 	}
 }
-
+/* END Castle and devil */
 
 
 
